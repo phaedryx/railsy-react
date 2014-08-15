@@ -12,4 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+
+var square = require('./square');
+var React  = require('react');
+var HelloMessage = require('components/HelloMessage');
+
+console.log(square(12));
+
+React.renderComponent(HelloMessage({name: "Steve"}), document.getElementById("hello"));
