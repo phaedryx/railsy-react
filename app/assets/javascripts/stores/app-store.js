@@ -1,19 +1,18 @@
-var AppDispatcher = require('../dispatchers/app-dispatcher');
-var AppConstants = require('../constants/app-constants');
+var AppDispatcher = require('dispatchers/app-dispatcher');
+var AppConstants = require('constants/app-constants');
 var merge = require('react/lib/merge');
 var EventEmitter = require('events').EventEmitter;
 
 var CHANGE_EVENT = "change";
 
-
 var _catalog = [
-    {id:1, title: 'Widget #1', cost: 1},
-    {id:2, title: 'Widget #2', cost: 2},
-    {id:3, title: 'Widget #3', cost: 3}
+    {id: 1, title: 'Widget #1', cost: 1},
+    {id: 2, title: 'Widget #2', cost: 2},
+    {id: 3, title: 'Widget #3', cost: 3},
+    {id: 4, title: 'Widget #4', cost: 3.50}
   ];
 
 var _cartItems = [];
-
 
 function _removeItem(index){
   _cartItems[index].inCart = false;
@@ -32,7 +31,6 @@ function _decreaseItem(index){
     _removeItem(index);
   }
 }
-
 
 function _addItem(item){
   if(!item.inCart){

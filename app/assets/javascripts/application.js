@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 
-var App = require('./components/app');
+var App = require('components/app');
 var React = require('react');
 
 React.renderComponent(App(null), document.getElementById('main'));
