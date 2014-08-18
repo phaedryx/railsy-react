@@ -156,7 +156,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  browserify-rails (~> 0.3)
+  browserify-rails
   coffee-rails (~> 4.0.0)
   jquery-rails
   rails (= 4.1.4)
