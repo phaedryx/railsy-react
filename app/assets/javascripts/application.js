@@ -13,10 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 
-var square = require('./square');
-var React  = require('react');
-var HelloMessage = require('components/HelloMessage');
+var App = require('./components/app');
+var React = require('react');
 
-console.log(square(12));
-
-React.renderComponent(HelloMessage({name: "Steve"}), document.getElementById("hello"));
+React.renderComponent(App(null), document.getElementById('main'));
